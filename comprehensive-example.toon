@@ -1,0 +1,253 @@
+name: TOON Comprehensive Syntax Example
+version: 2.0
+description: Demonstrates all TOON v2.0 syntax features
+author: TOON Language Extension
+
+primitives:
+  null_value: null
+  bool_true: true
+  bool_false: false
+  integer_zero: 0
+  positive_int: 42
+  negative_int: -17
+  decimal: 3.14159
+  negative_decimal: -2.718
+  sci_notation_pos: 1.5e10
+  sci_notation_neg: 2.5e-3
+  sci_notation_upper: 3.0E8
+  empty_string: ""
+  quoted_string: "hello world"
+  unquoted_string: hello world
+  unicode_string: Héllo wörld 世界 مرحبا שלום
+  emoji_string: Hello 👋 🎉 🚀 🌟
+  escaped_string: "Line 1\nLine 2\tTabbed\r\nQuote: \" Backslash: \\"
+
+quoted_keys:
+  "key with spaces": value1
+  "key:with:colons": value2
+  "key[with]brackets": value3
+  "key{with}braces": value4
+
+dotted_keys:
+  simple.path: value
+  longer.nested.path: another_value
+  with_underscore.and_numbers123: final_value
+
+inline_arrays:
+  comma_separated[3]: a,b,c
+  pipe_separated[3]|: x|y|z
+  tab_separated[3]	: one	two	three
+  mixed_values[5]: 1,true,null,"quoted",unquoted
+  empty_array[0]:
+
+tabular_arrays:
+  basic_table[3]{id,name,age}:
+    1,Alice,30
+    2,Bob,25
+    3,Charlie,35
+  pipe_table[2]|{x,y,z}:
+    10|20|30
+    40|50|60
+  tab_table[2]	{col1,col2,col3}:
+    a	b	c
+    d	e	f
+  mixed_types[3]{id,active,score}:
+    1,true,95.5
+    2,false,87.3
+    3,true,92.1
+
+object_arrays:
+  simple_objects[2]:
+    - name: Alice
+      age: 30
+      active: true
+    - name: Bob
+      age: 25
+      active: false
+  complex_objects[3]:
+    - id: 1
+      profile:
+        name: Alice Smith
+        email: alice@example.com
+        verified: true
+      scores[3]: 95,87,92
+    - id: 2
+      profile:
+        name: Bob Jones
+        email: bob@example.com
+        verified: false
+      scores[2]: 78,85
+    - id: 3
+      profile:
+        name: Charlie Brown
+        email: charlie@example.com
+        verified: true
+      scores[4]: 88,91,89,93
+
+nested_structures:
+  level1:
+    level2:
+      level3:
+        deep_value: found
+        deep_array[2]: x,y
+      back_to_level2: value
+    sibling:
+      data: more_data
+
+mixed_array_formats:
+  inline_then_nested[1]: first_inline
+  nested_then_inline:
+    nested_value: inside
+  array_with_inline_objects[2]:
+    - name: Quick
+      value: 1
+    - name: Object
+      value: 2
+
+delimiter_variations:
+  comma_in_header[3,]: a,b,c
+  pipe_in_header[3]|: a|b|c
+  tab_in_header[3]	: a	b	c
+  comma_fields[2]{name,value}:
+    Alice,100
+    Bob,200
+  pipe_fields[2]|{name,value}:
+    Alice|100
+    Bob|200
+  tab_fields[2]	{name,value}:
+    Alice	100
+    Bob	200
+
+edge_cases:
+  unquoted_with_many_chars: abcdefghijklmnopqrstuvwxyz_0123456789
+  unquoted_unicode: こんにちは世界
+  unquoted_with_dots: path.to.something
+  number_as_string: "123"
+  boolean_as_string: "true"
+  null_as_string: "null"
+  starts_with_letter_then_number: a123b456c789
+  mixed_case_UnQuoted: MixedCaseValue
+
+real_world_example:
+  users[4]{id,username,email,role,active}:
+    1,alice,alice@example.com,admin,true
+    2,bob,bob@example.com,user,true
+    3,charlie,charlie@example.com,user,false
+    4,diana,diana@example.com,moderator,true
+  products[3]:
+    - id: 1
+      name: Laptop
+      price: 999.99
+      specs:
+        cpu: Intel i7
+        ram: 16
+        storage: 512
+      tags[3]: electronics,computers,portable
+    - id: 2
+      name: Mouse
+      price: 29.99
+      specs:
+        type: wireless
+        dpi: 1600
+        buttons: 5
+      tags[2]: electronics,accessories
+    - id: 3
+      name: Keyboard
+      price: 79.99
+      specs:
+        type: mechanical
+        switches: cherry_mx_blue
+        backlight: true
+      tags[3]: electronics,accessories,gaming
+
+special_characters_in_values:
+  url: https://example.com/path?query=value&foo=bar
+  path: /usr/local/bin/program
+  windows_path: C:\Users\Name\Documents
+  email_format: user.name+tag@domain.co.uk
+  math_expression: 2+2=4
+  percentage: 95%
+  currency: $99.99
+  at_symbol: @username
+  hash_symbol: "#FF5733"
+
+empty_and_sparse:
+  empty_string_value: ""
+  empty_array[0]:
+  array_with_empty[3]: "","",""
+  sparse_table[2]{a,b,c}:
+    1,"",3
+    "",2,""
+
+whitespace_handling:
+  leading_space: " starts with space"
+  trailing_space: "ends with space "
+  multiple_spaces: "multiple   spaces   inside"
+  tabs_in_string: "tab	here	and	there"
+  newlines_escaped: "first line\nsecond line\nthird line"
+
+number_edge_cases:
+  just_zero: 0
+  negative_zero: -0
+  tiny_decimal: 0.000001
+  large_number: 9999999999
+  scientific_small: 1e-10
+  scientific_large: 1e10
+  scientific_zero_exp: 1.5e0
+  pi_approximation: 3.14159265359
+  euler_approximation: 2.71828182846
+
+array_of_arrays_objects[2]:
+  - name: Collection 1
+    items[3]: a,b,c
+    metadata:
+      created: 2024-01-01
+      updated: 2024-01-15
+  - name: Collection 2
+    items[2]: x,y
+    metadata:
+      created: 2024-02-01
+      updated: 2024-02-20
+
+complex_nesting:
+  organizations[2]:
+    - id: 1
+      name: Tech Corp
+      departments[2]:
+        - name: Engineering
+          teams[2]{team_id,team_name,size}:
+            101,Backend,5
+            102,Frontend,4
+          manager:
+            name: Alice
+            level: senior
+        - name: Sales
+          teams[1]{team_id,team_name,size}:
+            201,Enterprise,3
+          manager:
+            name: Bob
+            level: principal
+    - id: 2
+      name: Design Studio
+      departments[1]:
+        - name: Creative
+          teams[2]{team_id,team_name,size}:
+            301,UX,3
+            302,Graphics,2
+          manager:
+            name: Charlie
+            level: lead
+
+unicode_everywhere:
+  chinese: 你好世界
+  japanese: こんにちは世界
+  korean: 안녕하세요 세계
+  arabic: مرحبا بالعالم
+  hebrew: שלום עולם
+  russian: Привет мир
+  greek: Γειά σου κόσμε
+  thai: สวัสดีชาวโลก
+  emoji_array[5]: 😀,🎉,🚀,❤️,🌟
+  mixed_script: Hello世界مرحباשלום
+
+end_marker: "End of comprehensive TOON example"

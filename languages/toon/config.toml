@@ -1,0 +1,6 @@
+name = "TOON"
+grammar = "toon"
+path_suffixes = ["toon"]
+tab_size = 2
+hard_tabs = false
+line_comments = []
