@@ -1,13 +1,7 @@
-; Indent inside objects
+; Indent for object and array content
 (object) @indent
-
-; Indent inside array bodies  
 (array_body) @indent
 
-; Array markers
-"[" @indent
+; Dedent at closing brackets (Zed uses @end, not @outdent)
 "]" @end
-
-; Object-like markers  
-"{" @indent
 "}" @end

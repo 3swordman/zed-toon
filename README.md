@@ -18,12 +18,11 @@ This extension provides complete language support for [TOON (Token-Oriented Obje
   - Nested objects with proper indentation levels
   - Array bodies (both tabular data and object lists)
   - Automatic dedenting
+  - FIXME: When typing a newline after certain lines, the cursor indents to the wrong level
 
 - **Code Outline**: Navigate TOON documents with structure view
   - All object keys visible
   - Works with both simple values and arrays
-
-- **Text Objects** (Vim mode): Navigate by objects, arrays, and key-value pairs
 
 ## About TOON
 
