@@ -1,9 +1,13 @@
 ; Indent inside objects
 (object) @indent
 
-; Indent inside array bodies
+; Indent inside array bodies  
 (array_body) @indent
 
-; Markers for end of indented blocks
+; Array markers
+"[" @indent
 "]" @end
+
+; Object-like markers  
+"{" @indent
 "}" @end

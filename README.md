@@ -1,6 +1,6 @@
 # TOON Language Support for Zed
 
-This extension provides complete language support for [TOON (Token-Oriented Object Notation)](https://github.com/toon-format/spec) in the Zed editor.
+This extension provides complete language support for [TOON (Token-Oriented Object Notation)](https://github.com/toon-format/toon) in the Zed editor.
 
 ## Features
 
@@ -44,20 +44,13 @@ users[2]{id,name,role}:
 3. Search for "TOON"
 4. Click Install
 
-## Configuration
-
-The extension uses the following defaults:
-- **Tab Size**: 2 spaces
-- **Hard Tabs**: Disabled (spaces only, as per TOON spec)
-- **Line Comments**: None (TOON does not support comments)
-
 ## File Association
 
 Files with the `.toon` extension are automatically recognized.
 
 ## Grammar
 
-This extension uses the official [tree-sitter-toon](https://github.com/3swordman/tree-sitter-toon) grammar.
+This extension uses the [tree-sitter-toon](https://github.com/3swordman/tree-sitter-toon).
 
 ## Specification
 
@@ -65,8 +58,4 @@ For the complete TOON specification, see the [official spec](https://github.com/
 
 ## License
 
-GPL-3.0-or-later (matching the tree-sitter-toon grammar license)
-
-## Contributing
-
-Contributions are welcome! Please visit the [GitHub repository](https://github.com/3swordman/zed-toon).
+GPL-3.0-or-later
