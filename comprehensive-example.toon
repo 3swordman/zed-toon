@@ -14,7 +14,7 @@ primitives:
   negative_decimal: -2.718
   sci_notation_pos: 1.5e10
   sci_notation_neg: 2.5e-3
-  sci_notation_upper: 3.0E8
+  sci_notation_upper: 3.0E811
   empty_string: ""
   quoted_string: "hello world"
   unquoted_string: hello world

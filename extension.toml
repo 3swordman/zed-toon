@@ -1,6 +1,6 @@
 id = "toon"
 name = "TOON"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["Shawn Yu <yyuxiaoran@qq.com>"]
 description = "TOON support."
@@ -8,4 +8,4 @@ repository = "https://github.com/3swordman/zed-toon"
 
 [grammars.toon]
 repository = "https://github.com/3swordman/tree-sitter-toon"
-rev = "3b6dee824587485873b605ab9639a455c148cd45"
+rev = "fc3d478797d51f0bc3c9a5b7773a727ec6eb64f4"
