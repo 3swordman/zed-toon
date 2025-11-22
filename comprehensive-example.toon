@@ -36,7 +36,6 @@ dotted_keys:
 inline_arrays:
   comma_separated[3]: a,b,c
   pipe_separated[3]|: x|y|z
-  tab_separated[3]	: one	two	three
   mixed_values[5]: 1,true,null,"quoted",unquoted
   empty_array[0]:
 
@@ -105,16 +104,16 @@ mixed_array_formats:
       value: 2
 
 delimiter_variations:
-  comma_in_header[3,]: a,b,c
-  pipe_in_header[3]|: a|b|c
-  tab_in_header[3]	: a	b	c
+  comma_in_header[3]: a,b,c
+  pipe_in_header[3|]: a|b|c
+  tab_in_header[3	]: a	b	c
   comma_fields[2]{name,value}:
     Alice,100
     Bob,200
-  pipe_fields[2]|{name,value}:
+  pipe_fields[2|]{name|value}:
     Alice|100
     Bob|200
-  tab_fields[2]	{name,value}:
+  tab_fields[2	]{name	value}:
     Alice	100
     Bob	200
 

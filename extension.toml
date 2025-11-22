@@ -8,4 +8,4 @@ repository = "https://github.com/3swordman/zed-toon"
 
 [grammars.toon]
 repository = "https://github.com/3swordman/tree-sitter-toon"
-rev = "fc3d478797d51f0bc3c9a5b7773a727ec6eb64f4"
+rev = "da7045ed1c9783d58de643fde628b671f7179214"
