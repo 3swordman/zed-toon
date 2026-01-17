@@ -106,16 +106,12 @@ mixed_array_formats:
 delimiter_variations:
   comma_in_header[3]: a,b,c
   pipe_in_header[3|]: a|b|c
-  tab_in_header[3	]: a	b	c
   comma_fields[2]{name,value}:
     Alice,100
     Bob,200
   pipe_fields[2|]{name|value}:
     Alice|100
     Bob|200
-  tab_fields[2	]{name	value}:
-    Alice	100
-    Bob	200
 
 edge_cases:
   unquoted_with_many_chars: abcdefghijklmnopqrstuvwxyz_0123456789
